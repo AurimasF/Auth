@@ -1463,7 +1463,7 @@ class Auth
             if (is_array($this->advancedsecurity)) {
 
                 return isset($this->advancedsecurity[$feature])
-                    && $this->advancedsecurity[$feature] == true
+                    && $this->advancedsecurity[$feature] == true;
 
             }
 
