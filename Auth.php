@@ -353,7 +353,7 @@ class Auth {
         }
 
         // Assign Some globals to internal references, this will replace _importGlobalVariable
-        $this->session = $_SESSION[$this->_sessionName];
+        $this->session = &$_SESSION[$this->_sessionName];
         $this->server = $_SERVER;
         $this->post = $_POST;
         $this->cookie = $_COOKIE;
